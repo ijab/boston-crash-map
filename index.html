@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boston Crash Map</title>
+  </head>
+  <body>
+    <div id="controls">
+      <div id="modes" role="group" aria-label="Map style">
+        <button type="button" data-mode="points" aria-pressed="true">Points</button>
+        <button type="button" data-mode="hexagons" aria-pressed="false">Hexagons</button>
+        <button type="button" data-mode="heatmap" aria-pressed="false">Heatmap</button>
+      </div>
+      <label>
+        From
+        <input id="startHour" type="range" min="0" max="23" value="0" aria-label="Start hour" />
+        <span id="startLabel">00:00</span>
+      </label>
+      <label>
+        To
+        <input id="endHour" type="range" min="0" max="23" value="23" aria-label="End hour" />
+        <span id="endLabel">23:00</span>
+      </label>
+      <span id="countLabel" aria-live="polite"></span>
+    </div>
+    <div id="map"></div>
+    <div id="status" role="status" hidden></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
