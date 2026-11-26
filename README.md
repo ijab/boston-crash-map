@@ -3,6 +3,8 @@
 An interactive map of traffic crashes in Boston, built with [deck.gl](https://deck.gl) on Google Maps.
 Switch between individual points, 3D hexagon bins, and a heatmap, and filter crashes by time of day.
 
+There is also a [React + TypeScript version](https://github.com/ijab/boston-crash-map-react) with the same features.
+
 <!-- Add a screenshot: save it as docs/screenshot.png -->
 ![Boston Crash Map](docs/screenshot.png)
 
@@ -59,5 +61,5 @@ Crash records come from the City of Boston's [Vision Zero Crash Records](https:/
 
 ## Next steps
 
-- Move the app to React and TypeScript.
+- ~~Move the app to React and TypeScript.~~ Done: see [boston-crash-map-react](https://github.com/ijab/boston-crash-map-react).
 - Serve the data from a Django + PostGIS API and load only the area in view.
